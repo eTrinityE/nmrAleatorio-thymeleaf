@@ -9,9 +9,12 @@ public class teste {
     
     @RequestMapping("/alo")
     public String master(Model modelo){
-        modelo.addAttribute("numero1",Math.round(Math.random()*60));
-        modelo.addAttribute("numero2", 100);
-        modelo.addAttribute("x", "alo mundo");
+        modelo.addAttribute("numero1",Math.round(Math.random()*100));
+        modelo.addAttribute("numero2",Math.round(Math.random()*100));
+        modelo.addAttribute("numero3",Math.round(Math.random()*100));
+        modelo.addAttribute("numero4",Math.round(Math.random()*100));
+        modelo.addAttribute("numero5",Math.round(Math.random()*100));
+        modelo.addAttribute("numero6",Math.round(Math.random()*100));
         return "view1";
     }
 }
